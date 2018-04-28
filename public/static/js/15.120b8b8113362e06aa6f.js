@@ -1,0 +1,2 @@
+webpackJsonp([15],{aUI6:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"btn"},[e("div",{staticClass:"two"},[e("router-link",{attrs:{to:"/personSummary"}},[this._v("个人总结")]),this._v(" "),e("router-link",{attrs:{to:"/talk"}},[this._v("民主评议")])],1)])},staticRenderFns:[]};var r=n("VU/8")({},s,!1,function(t){n("nQRA")},"data-v-7b95793b",null);e.default=r.exports},nQRA:function(t,e){}});
+//# sourceMappingURL=15.120b8b8113362e06aa6f.js.map

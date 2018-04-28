@@ -85,20 +85,19 @@ router.get('/getAll',(req,res) => {
     })
 })
 router.get('/newsEyes',(req,res) => {  //查看新闻眼
-    news.find({type:"信工新闻眼"}, (err,data) => {
-        if(err){
+    let {pn} = req.query;
+    news.find({type:"信工新闻眼"}).sort({createTime:-1}).skip((pn-1)*8).limit(8).exec((err,data) => {
+        if(err) {
             res.json({
                 data:err,
                 code:500,
-                msg:"数据查找失败",
                 ret:false
             })
             return
         }
         res.json({
-            data:data,
+            data,
             code:200,
-            msg:"success",
             ret:true
         })
     })
